@@ -1,27 +1,47 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
-  }
-  
-  .emoji {
+}
+
+main{
+    display: flex;
+    justify-content: left;
+}
+
+.emojis {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.emoji {
     border: 1px solid #222;
-    border-radius: 8px;
+    display: flex;
     padding: 1rem;
-  }
-  
-  .emoji h2 {
+    border-radius: 8px;
+    max-width: 380px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.emoji h2 {
     margin: 0;
     border-bottom: 2px solid #ccc;
-  }
-  
-  .emoji a {
+}
+
+.emoji a {
     text-decoration: none;
-    background-color: #781BAA;
+    background-color: #7613ac;
     color: white;
     padding: 1rem;
+    margin-top: auto;
     border-radius: 8px;
-  }
-  
-  .icon {
+    align-content: flex-end;
+}
+
+.icon {
     font-size: 4rem;
-  }
+    order: -1;
+    align-self: center;
+}
