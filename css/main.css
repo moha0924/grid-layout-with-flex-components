@@ -8,13 +8,6 @@ main{
     justify-content: left;
 }
 
-.emojis {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
-}
-
 .emoji {
     border: 1px solid #222;
     display: flex;
@@ -28,6 +21,13 @@ main{
 .emoji h2 {
     margin: 0;
     border-bottom: 2px solid #ccc;
+}
+
+.emojis {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
 }
 
 .emoji a {
